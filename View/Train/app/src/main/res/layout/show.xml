@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/titlebar" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direct" />
+
+    <RadioButton
+        android:id="@+id/direct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="130dp"
+        android:background="#FFFFFF"
+        android:button="@null"
+        android:text="直达"
+        android:textSize="30sp"/>
+
+
+    <RadioButton
+        android:id="@+id/transit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0099CC"
+        android:button="@null"
+        android:text="中转"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/direct"
+        android:layout_toEndOf="@+id/direct" />
+
+</RelativeLayout>
